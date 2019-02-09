@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('css')
-<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="/css/login.css">
 @endsection
 
 @section('content')
@@ -37,13 +37,19 @@
               @endif
 
               <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Se souvenir de moi</label>
+                <input type="checkbox" class="custom-control-input" id="customCheck1"
+                name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                <label class="custom-control-label" for="customCheck1" for="remember">Se souvenir de moi</label>
               </div>
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Se connecter</button>
               <hr class="my-4">
               <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> se connecter avec Google</button>
               <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> se connecter avec Facebook</button>
+              @if (Route::has('password.request'))
+                <a class="btn btn-lg  btn-block text-uppercase" href="{{ route('password.request') }}"><i class="mr-2"></i>
+                    Mot de passe oublier ?
+                </a>
+              @endif
             </form>
           </div>
         </div>

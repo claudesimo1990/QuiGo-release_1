@@ -1,7 +1,7 @@
 @include('includes.head')
 
 @section('css')
-<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="/css/nav.css">
 
 
 <body>
