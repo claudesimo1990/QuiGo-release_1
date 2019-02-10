@@ -8,12 +8,16 @@
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+            <div class="form-row row">
+              <div class="col-3 col-md-3 mb-2 mb-md-0">
+                <input type="text" class="form-control form-control" placeholder="Depart :">
+              </div><div class="col-3 col-md-3 mb-2 mb-md-0">
+                <input type="text" class="form-control form-control" placeholder="Destination :">
+              </div><div class="col-3 col-md-3 mb-2 mb-md-0">
+                <input type="Date" class="form-control form-control" placeholder="Date">
               </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              <div class="col-3 col-md-3">
+                <button type="submit" class="btn btn-block btn btn-primary">Rechercher</button>
               </div>
             </div>
           </form>
@@ -130,7 +134,7 @@
                 <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
               </div>
               <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Rechercher</button>
               </div>
             </div>
           </form>
